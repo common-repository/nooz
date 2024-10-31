@@ -1,0 +1,167 @@
+.nooz-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: $post-spacing;
+    @media (min-width: $site-sm-min) {
+        grid-gap: calc($post-spacing * 2);
+    }
+}
+.nooz-post {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(#000, 0.2);
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+    &:before {
+        content: "";
+        display: none;
+        padding-top: calc((4/3) * 100%);
+        width: 100%;
+    }
+    @media (min-width: $site-sm-min) {
+        &:before {
+            display: block;
+        }
+    }
+    &__link {
+        bottom: 0;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        left: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        @media (min-width: $site-sm-min) {
+            position: absolute;
+        }
+        &:visited {
+            color: inherit;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    .has-excerpt &__link:after {
+        @media (min-width: $site-sm-min) {
+            background: linear-gradient(rgba(#fff, 0), #fff 80%);
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 80px;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    .has-excerpt.has-action &__link:after {
+        @media (min-width: $site-sm-min) {
+            background: linear-gradient(rgba(#fff, 0), #fff 60%);
+            height: 120px;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        padding: $post-spacing;
+        @media (min-width: $site-sm-min) {
+            padding-bottom: calc($post-spacing / 2);
+            padding-top: calc($post-spacing / 2);
+        }
+        > * {
+            margin-top: calc($post-spacing / 2);
+        }
+        > *:first-child {
+            margin-top: auto;
+        }
+        // helps to balance spacing when only title is visible
+        &:after {
+            content: "";
+            height: 0;
+            line-height: 0;
+            margin-bottom: auto;
+        }
+    }
+    &__action {
+        padding: $post-spacing;
+        padding-top: 0;
+        z-index: 1;
+    }
+    &__action-button {
+        background-color: $palette-color2;
+        border: 0;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+        transition-property: background-color;
+    }
+    &__link:hover &__action-button {
+        background-color: $palette-color4;
+    }
+    &__preview {
+        position: relative;
+        z-index: 1;
+    }
+    &__preview-background {
+        background: transparent url() no-repeat center;
+        background-size: cover;
+        height: 0;
+        overflow: hidden;
+        padding-top: calc((9/16) * 100%);
+        position: relative;
+        @media (min-width: $site-sm-min) {
+            padding-top: calc((3/4) * 100%);
+        }
+    }
+    .has-excerpt &__preview-background {
+        padding-top: calc((9/16) * 100%);
+    }
+    &__preview-image {
+        display: none;
+        height: 100%;
+        left: 50%;
+        max-width: none;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    &__heading {
+        font-size: 1em;
+        line-height: 1.2;
+        margin: 0;
+        transition: all 0.2s linear;
+        transition-property: color;
+        @media (min-width: $site-sm-min) {
+            font-size: 1em;
+        }
+    }
+    &__link:hover &__heading {
+        color: $palette-color4;
+    }
+    &__excerpt {
+        font-size: 0.9em;
+        line-height: 1.2;
+    }
+    &__source {
+        color: #777;
+        font-size: 0.8em;
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+    &__datetime {
+        color: #777;
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,22 @@
+.nooz-help-link {
+    text-decoration: none;
+}
+.nooz-contextual-help .help-tab-content {
+    margin-right: 0;
+}
+.nooz-contextual-help .help-tab-content th {
+    text-align: left;
+}
+.nooz-contextual-help .help-tab-content table {
+    background-color: #fff;
+    border-collapse: collapse;
+}
+.nooz-contextual-help .help-tab-content table,
+.nooz-contextual-help .help-tab-content th,
+.nooz-contextual-help .help-tab-content td {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+.nooz-contextual-help pre {
+    margin: 2em 0;
+}

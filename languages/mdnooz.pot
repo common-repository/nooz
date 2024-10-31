@@ -1,0 +1,510 @@
+# Copyright (C) 2020 Mighty Digital
+# This file is distributed under the same license as the Nooz plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nooz 1.7.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nooz\n"
+"Last-Translator: Mighty Digital <devteam@mightydigital.com>\n"
+"Language-Team: en_US <devteam@mightydigital.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-02-26T17:24:14-08:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: mdnooz\n"
+
+#. Plugin Name of the plugin
+msgid "Nooz"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.mightydev.com/nooz/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Simplified press release and media coverage management for websites."
+msgstr ""
+
+#. Author of the plugin
+msgid "Mighty Digital"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.mightydev.com"
+msgstr ""
+
+#: inc/class-admin.php:233
+msgid "Settings"
+msgstr ""
+
+#. translators: 1: Link to create page 2: Link to dismiss
+#: inc/class-admin.php:315
+msgid "Create a “News” page? Yes, <a href=\"%1$s\">create page</a>. No, <a href=\"%2$s\">dismiss</a>."
+msgstr ""
+
+#. translators: 1: Link to edit page
+#: inc/class-admin.php:325
+msgid "“News” page published. <a href=\"%1$s\">Edit page</a>"
+msgstr ""
+
+#: inc/class-admin.php:335
+msgid "News"
+msgstr ""
+
+#: inc/class-admin.php:348
+msgid "General"
+msgstr ""
+
+#: inc/class-admin.php:349
+msgid "These options modify the default behavior of the plugin. Additionally, you can modify each option per-shortcode."
+msgstr ""
+
+#: inc/class-admin.php:373
+msgid "Post Count"
+msgstr ""
+
+#. translators: 1: Link to WordPress Reading options
+#: inc/class-admin.php:376
+msgid "The number of press releases or coverage to show. Leave this blank to use the <a href=\"%1$s\">default posts per page</a> as set in WordPress."
+msgstr ""
+
+#: inc/class-admin.php:383
+#: inc/class-release.php:301
+msgid "Date Format"
+msgstr ""
+
+#. translators: 1: Link to WordPress General options 2: Link to Formatting Date and Time information
+#: inc/class-admin.php:388
+msgid "The date appearing for each press release and coverage. Leave this blank to use the <a href=\"%1$s\">default date format</a> as set in WordPress. Learn more about <a href=\"%2$s\" target=\"_blank\">formatting dates</a>."
+msgstr ""
+
+#: inc/class-admin.php:392
+msgid "Excerpts"
+msgstr ""
+
+#: inc/class-admin.php:394
+msgid "Enable press release and coverage excerpts."
+msgstr ""
+
+#: inc/class-admin.php:395
+msgid "An excerpt will only be used if available for the specific press release or coverage."
+msgstr ""
+
+#: inc/class-admin.php:398
+msgid "Call to Action"
+msgstr ""
+
+#: inc/class-admin.php:400
+msgid "The call to action link provides a clear clickable target."
+msgstr ""
+
+#: inc/class-admin.php:401
+msgid "Enable a call to action link for each item."
+msgstr ""
+
+#: inc/class-admin.php:407
+#: inc/class-admin.php:706
+msgid "Read More"
+msgstr ""
+
+#: inc/class-admin.php:408
+msgid "Default text for the call to action link."
+msgstr ""
+
+#: inc/class-admin.php:415
+msgid "Pagination"
+msgstr ""
+
+#: inc/class-admin.php:417
+msgid "Enable pagination links."
+msgstr ""
+
+#: inc/class-admin.php:419
+msgid "Add links to navigate between pages."
+msgstr ""
+
+#: inc/class-admin.php:423
+msgid "Default text for the previous and next pagination links."
+msgstr ""
+
+#: inc/class-admin.php:428
+#: inc/class-admin.php:707
+msgid "Previous"
+msgstr ""
+
+#: inc/class-admin.php:433
+#: inc/class-admin.php:708
+msgid "Next"
+msgstr ""
+
+#: inc/class-admin.php:441
+msgid "Theme"
+msgstr ""
+
+#: inc/class-admin.php:458
+msgid "Sections"
+msgstr ""
+
+#: inc/class-admin.php:461
+msgid "Hide sections that do not have content?"
+msgstr ""
+
+#: inc/class-admin.php:462
+msgid "If no content exists within a section, the section will not be displayed."
+msgstr ""
+
+#: inc/class-admin.php:477
+msgid "Add New Release"
+msgstr ""
+
+#: inc/class-admin.php:481
+msgid "Add New Coverage"
+msgstr ""
+
+#: inc/class-admin.php:483
+msgctxt "Admin settings page"
+msgid "Settings"
+msgstr ""
+
+#: inc/class-admin.php:541
+msgctxt "post type plural name"
+msgid "Press Releases"
+msgstr ""
+
+#: inc/class-admin.php:542
+msgctxt "post type singular name"
+msgid "Press Release"
+msgstr ""
+
+#: inc/class-admin.php:543
+msgctxt "add new press release"
+msgid "Add New"
+msgstr ""
+
+#: inc/class-admin.php:544
+msgid "Add New Press Release"
+msgstr ""
+
+#: inc/class-admin.php:545
+msgid "New Page"
+msgstr ""
+
+#: inc/class-admin.php:546
+msgid "Edit Press Release"
+msgstr ""
+
+#: inc/class-admin.php:547
+msgid "View Press Release"
+msgstr ""
+
+#: inc/class-admin.php:548
+msgid "All Releases"
+msgstr ""
+
+#: inc/class-admin.php:549
+msgid "No press releases found."
+msgstr ""
+
+#: inc/class-admin.php:550
+msgid "No press releases found in Trash."
+msgstr ""
+
+#: inc/class-admin.php:568
+msgctxt "post type plural name"
+msgid "Press Coverage"
+msgstr ""
+
+#: inc/class-admin.php:569
+msgctxt "post type singular name"
+msgid "Press Coverage"
+msgstr ""
+
+#: inc/class-admin.php:570
+msgctxt "add new press coverage"
+msgid "Add New"
+msgstr ""
+
+#: inc/class-admin.php:571
+msgid "Add New Press Coverage"
+msgstr ""
+
+#: inc/class-admin.php:572
+msgid "New Press Coverage"
+msgstr ""
+
+#: inc/class-admin.php:573
+msgid "Edit Coverage"
+msgstr ""
+
+#: inc/class-admin.php:574
+msgid "View Coverage"
+msgstr ""
+
+#: inc/class-admin.php:575
+msgid "All Coverage"
+msgstr ""
+
+#: inc/class-admin.php:576
+msgid "No press coverage found."
+msgstr ""
+
+#: inc/class-admin.php:577
+msgid "No press coverage found in Trash."
+msgstr ""
+
+#: inc/class-admin.php:618
+msgid "Unable to load theme"
+msgstr ""
+
+#: inc/class-admin.php:772
+msgid "Latest"
+msgstr ""
+
+#. translators: More [post_type] (plural form), e.g. More Books
+#: inc/class-admin.php:864
+msgctxt "More [post_type] (plural form), e.g. More Books"
+msgid "More %1$s"
+msgstr ""
+
+#: inc/class-contextual-help.php:110
+msgid "General Options"
+msgstr ""
+
+#: inc/class-contextual-help.php:115
+msgid "Press Release Options"
+msgstr ""
+
+#: inc/class-contextual-help.php:120
+msgid "Press Coverage Options"
+msgstr ""
+
+#: inc/class-contextual-help.php:125
+msgid "Shortcode Usage"
+msgstr ""
+
+#: inc/class-contextual-help.php:129
+msgid "For more information:"
+msgstr ""
+
+#: inc/class-contextual-help.php:130
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/class-contextual-help.php:131
+msgid "Support Forums"
+msgstr ""
+
+#: inc/class-coverage.php:104
+msgid "Press Coverage"
+msgstr ""
+
+#: inc/class-coverage.php:105
+msgid "These options modify the behavior of a coverage page."
+msgstr ""
+
+#: inc/class-coverage.php:118
+#: inc/class-release.php:264
+#: inc/templates/coverage-source-meta.php:5
+msgid "URL"
+msgstr ""
+
+#: inc/class-coverage.php:123
+msgid "The URL base for a press coverage landing page."
+msgstr ""
+
+#. translators: 1: Link to Caching information
+#: inc/class-coverage.php:125
+#: inc/class-release.php:271
+msgid "Your browser <a href=\"%1$s\" target=\"_blank\">cache</a> may need to be cleared if you change this."
+msgstr ""
+
+#: inc/class-coverage.php:131
+#: inc/class-release.php:277
+msgid "Featured Image"
+msgstr ""
+
+#: inc/class-coverage.php:136
+#: inc/class-release.php:282
+msgid "The default featured image to use if one is not selected."
+msgstr ""
+
+#: inc/class-coverage.php:139
+#: inc/class-release.php:285
+msgid "Default Featured Image"
+msgstr ""
+
+#: inc/class-coverage.php:140
+#: inc/class-release.php:286
+msgid "Select"
+msgstr ""
+
+#: inc/class-coverage.php:141
+#: inc/class-release.php:287
+msgid "Select Image"
+msgstr ""
+
+#: inc/class-coverage.php:142
+#: inc/class-release.php:288
+msgid "Remove Image"
+msgstr ""
+
+#: inc/class-coverage.php:143
+#: inc/class-release.php:289
+msgid "Unable to find image file"
+msgstr ""
+
+#: inc/class-release.php:89
+msgid "Unable to load press release, template required"
+msgstr ""
+
+#: inc/class-release.php:244
+msgid "Press Release"
+msgstr ""
+
+#: inc/class-release.php:245
+msgid "These options modify the behavior of a press release page."
+msgstr ""
+
+#: inc/class-release.php:269
+msgid "The URL base for a press release landing page."
+msgstr ""
+
+#: inc/class-release.php:293
+msgctxt "city/state"
+msgid "Location"
+msgstr ""
+
+#: inc/class-release.php:297
+msgid "The location precedes the press release and helps to orient the reader (e.g. San Francisco, CA)."
+msgstr ""
+
+#. translators: 1: Link to WordPress General options 2: Link to Formatting Date and Time information
+#: inc/class-release.php:307
+msgid "The date follows the location. Leave this blank to use the <a href=\"%1$s\">default date format</a> as set in WordPress. Learn more about <a href=\"%2$s\" target=\"_blank\">formatting dates</a>."
+msgstr ""
+
+#: inc/class-release.php:312
+msgid "Dateline Format"
+msgstr ""
+
+#: inc/class-release.php:317
+msgid "Available variables are <code>{location}</code>, <code>{date}</code> and <code>{dash}</code> (e.g. long dash —)."
+msgstr ""
+
+#: inc/class-release.php:321
+msgctxt "boilerplate text/content"
+msgid "Boilerplate"
+msgstr ""
+
+#: inc/class-release.php:325
+msgid "The boilerplate is a few sentences at the end of the press release that describes your organization. This should be used consistently on press materials and written strategically, to properly reflect your organization."
+msgstr ""
+
+#: inc/class-release.php:329
+msgctxt "an ending mark/the end"
+msgid "Ending"
+msgstr ""
+
+#: inc/class-release.php:335
+msgid "The ending mark signifies the absolute end of the press release (e.g. ###, END, XXX, -30-)."
+msgstr ""
+
+#: inc/class-release.php:338
+msgid "Media Contact"
+msgstr ""
+
+#: inc/class-release.php:342
+msgid "Contact information for the PR or other media relations contact person at your organization."
+msgstr ""
+
+#: inc/templates/coverage-source-meta.php:7
+msgid "The URL of the news coverage."
+msgstr ""
+
+#: inc/templates/coverage-source-meta.php:12
+msgid "Open link in a new tab"
+msgstr ""
+
+#: inc/templates/coverage-source-meta.php:17
+msgid "Source name"
+msgstr ""
+
+#: inc/templates/coverage-source-meta.php:19
+msgid "The name of the source (e.g. Mashable, PR Newswire, CNN)."
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:4
+msgid "Dateline"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:4
+msgid "Edit"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:7
+msgid "The current dateline format is:"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:7
+msgid "The dateline format field is empty."
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:8
+msgid "Edit dateline format"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:15
+msgid "Location"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:15
+msgid "Edit default location"
+msgstr ""
+
+#. translators: 1: Link to Dateline information
+#: inc/templates/release-dateline-meta.php:20
+msgid "The location is part of the <a href=\"%1$s\" target=\"_blank\">dateline</a> which precedes the press release and helps to orient the reader (e.g. San Francisco, CA)."
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:22
+msgid "Leave blank to use the default location."
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:35
+msgid "Combine dateline with the first line of the press release"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:36
+msgid "Otherwise, the dateline will be placed on a seperate line before the press release."
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:41
+msgid "Hide the dateline?"
+msgstr ""
+
+#: inc/templates/release-dateline-meta.php:42
+msgid "This will hide the dateline completely for this press release."
+msgstr ""
+
+#: inc/templates/release-subheadline-meta.php:4
+msgid "Enter subheadline here"
+msgstr ""
+
+#: inc/templates/release-subheadline-meta.php:5
+msgid "An optional subheadline."
+msgstr ""
+
+#: inc/templates/settings.php:2
+msgctxt "[plugin_name] Settings"
+msgid "%s Settings"
+msgstr ""
+
+#: nooz.php:17
+msgid "Only a single version of the Nooz plugin can be active. You must deactivate the current version."
+msgstr ""
+
+#. translators: 1: Required PHP version 2: Current PHP version
+#: nooz.php:19
+msgid "The Nooz plugin requires PHP version %1$s, the current PHP version is %2$s"
+msgstr ""

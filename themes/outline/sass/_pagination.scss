@@ -1,0 +1,30 @@
+.nooz-pagination {
+    color: #777;
+    display: flex;
+    justify-content: center;
+    margin-top: $post-spacing + calc($post-spacing / 2);
+    &__nav {
+        margin: calc($post-spacing / 2);
+        margin-bottom: 0;
+    }
+    &__nav-link {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 8px rgba(#000, 0.2);
+        color: inherit;
+        display: block;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1;
+        padding: 10px 20px;
+        &:visited {
+            color: inherit;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color: $palette-color4;
+            text-decoration: none;
+        }
+    }
+}

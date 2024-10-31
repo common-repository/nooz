@@ -1,0 +1,27 @@
+// breakpoint widths
+$site-sm-width: 750px;
+$site-md-width: 970px;
+$site-lg-width: 1170px;
+$site-xl-width: 1370px;
+// breakpoints
+$site-ms-min: 480px;
+$site-ms-max: 767px;
+$site-xs-max: 767px;
+$site-sm-min: 768px;
+$site-sm-max: 991px;
+$site-md-min: 992px;
+$site-md-max: 1199px;
+$site-lg-min: 1200px;
+$site-lg-max: 1399px;
+$site-xl-min: 1400px;
+
+$palette-color1: #222;
+$palette-color2: #333;
+$palette-color3: #0073aa;
+$palette-color4: #00a0d2;
+
+$post-spacing: 16px;
+
+%headline-font {
+    font-family: sans-serif;
+}

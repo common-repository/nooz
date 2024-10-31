@@ -1,0 +1,243 @@
+= 1.7.2 =
+* minor css fixes
+* improved js minify, js file name adjustments
+* tested plugin with wordpress 6.6.2
+
+= 1.7.1 =
+* improved checks for adding new submenus
+* tested plugin with wordpress 6.6.1
+* updated plugin minimum wordpress version to 6.0
+
+= 1.7.0 =
+* improved template loading filters
+* improved output escaping in plugin-theme and plugin-core files
+* updated WordPress minimum supported version from 4.9 to 5.2
+* fixed issue with meta box not properly hidding postbox-header
+* fixed edge-case warnings by improving code with a explicit post type check
+* fixed issue where the second $post parameter of the "get_the_excerpt" filter may not always be used
+* fixed security issue which could allow high privilege users (such as admin) to perform Cross Site Scripting (XSS)
+* tested with WordPress 6.1.1
+
+= 1.6.0 =
+* added "meta" data value for use by custom post types
+* added check for duplicate plugin activation
+* improved shortcode post type (e.g. category) pretty URLs
+* improved managed post type handling
+* updated create_cpt init action priority from 10 to 50, allowing detection of user-defined post types using init action
+* updated shortcode help
+* fixed rewrite rules flush operation/timing
+
+= 1.5.1 =
+* fixed issue with backward compatibility for display="group"
+* updated readme.txt FAQs
+* updated screenshots
+
+= 1.5.0 =
+* added language file for community translations
+* added support for keeping settings data during an uninstall automatically (no option needed)
+* added shortcode id attr support
+* fixed issue where shortcode attr "type" was used when "post_ids" was used
+* changed "Shortcode" settings tab to "General"
+* changed "Settings" to "Nooz Settings" to better orient admin users
+* removed "Plugin" settings tab
+* tested plugin with wordpress 5.3.2
+* updated plugin minimum wordpress version to 4.9
+
+= 1.4.4 =
+* fixed issue with shortcode that required type="" and post_ids="" attributes be used together, using post_ids="" should be enough
+* fixed issue with col="" and rows="" attributes being applied to every form field in Nooz Settings
+* improved field dependency functionality in Nooz Settings
+
+= 1.4.3 =
+* fixed issue with default shortcode usage [nooz] or [nooz-release] (this issue was introduced in 1.4.1)
+* fixed undefined variable warning which may cause installation issues
+
+= 1.4.2 =
+* improved css class name consistency, added similar css class names used in "outline" theme to "basic" theme
+* fixed issue where coverage source could have white space around content
+* fixed issue where white space at the beginning of a coverage link url caused it not to be displayed properly after publish/update
+
+= 1.4.1 =
+* fixed "show_default_page_prompt_admin_notice()" call to be backward compatible
+* fixed "register_setting()" calls to be backward compatible
+* fixed "Requires at least" to an actual tested minimum wp version
+* fixed "Requires PHP" to an actual tested minimum php version
+
+= 1.4.0 =
+* removed \Symfony\Component\ClassLoader dependency
+* added support for keeping settings data during an uninstall
+* added settings plugin group help content
+* improved autoloading and namespaces
+* improved prepending of plugin action links instead of appending; this moves "Settings" link before "Deactivate" link
+* improved screenshots
+* fixed plugin uninstall issue; WordPress would show a warning: "Deletion failed: The site is experiencing technical difficulties"
+
+= 1.3.0 =
+* improved press release template for basic and outline theme
+* improved readme.txt installation section
+* improved admin styles and js
+* removed unneeded code dependencies
+* added a "Settings" link on the plugins page
+* added filter "nooz/settings/groups" with params $groups
+* added action "nooz/settings/setup" with params $active_group
+* added action "nooz/settings/setup/group={active_group}"
+* added php version to readme.txt
+* cleanup + code refactoring
+
+= 1.2.0 =
+* added $atts variable to "nooz_posts_query_options" filter
+* tested with wordpress 5.2
+
+= 1.1.1 =
+* improved dateline press release meta box
+* fixed issue with outline theme, removed debug code
+* fixed issue with upgrade function throwing a php-notice
+
+= 1.1.0 =
+* fixed issue with press releases created with v1.x not displaying subheadline
+* added option to hide the dateline per post
+* added dateline format setting
+
+= 1.0.1 =
+* fixed readme typo
+
+= 1.0.0 =
+* fixed filter position "nooz_shortcode_item_data", now includes item excerpt data
+* fixed post type URL display in settings page
+* fixed press release excerpt output
+* fixed shortcode attr "featured_image_url", attr now correctly overrides for the shortcode instance
+* changed shortcode attr "featured_image" to "featured_image_url", backward compatible, documentation updated
+* changed default shortcode "orderby" to "post_date" instead of "menu_order post_date", this can be overridden using the shortcode attribute "orderby"
+* removed "..." from links, these can be added back using the "nooz_shortcode_data" filter
+* removed "post_priority" in favor of the conventional WordPress "menu_order" field
+* removed Symfony Twig dependency (https://twig.symfony.com/)
+* removed WPAlchemy\MetaBox dependency
+* added php 5.3+ version check, plugin will warn users if php is an older version
+* added $atts to shortcode data
+* added $post to "nooz_shortcode_item_data" filter
+* added $nooz_core to "nooz_init" action
+* added "nooz-release-more-link" and "nooz-coverage-more-link" css class names to default pages
+* added "nooz-title" css class for item titles
+* added missing default featured image warning message
+* added "nooz_shortcode_item_data" alias, use "nooz_shortcode_item_data" instead of "nooz_shortcode_data_item"
+* added "use_archive_link", "archive_link" and "archive_link_url" shortcode attributes/functionality
+* added "MDNOOZ_PLUGIN_FILE" constant
+* added "MDNOOZ_PLUGIN_VERSION" constant
+* tested with wordpress 5.0.3
+
+= 0.14.1 =
+* fixed potential issue with the use of the "current_user_can()" function .. bbpress: if the current user is being setup before the "init" action has fired, strange (and difficult to debug) role/capability issues will occur
+* better use of wordpress api functions
+* precise handling of shortcode attr "type"
+* tested with wordpress 4.5.3
+
+= 0.14.0 =
+* added data item filter: "nooz_shortcode_data_item" (this filter runs within the loop)
+* added data filter: "nooz_shortcode_data"
+
+= 0.13.0 =
+* better filtering of groupby and orderby filters
+* added custom post type options filters: "nooz_release_custom_post_type_options" and "nooz_coverage_custom_post_type_options"
+* updated use of WPAlchemy\MetaBox, avoids conflicts with other uses of the lib
+* more unit tests added
+
+= 0.12.1 =
+* fixed issue with default shortcode type
+* cleanup, better tests
+
+= 0.12.0 =
+* added release output filter: add_filter( 'nooz_release', function ( $output, $data ) { return $output; }, 10, 2 );
+* code adjustments, better tests
+
+= 0.11.0 =
+* added shortcode output filter: add_filter( 'nooz_shortcode', function ( $output, $data ) { return $output; }, 10, 2 );
+* adjusted shortcode output data vars
+
+= 0.10.0 =
+* added "featured_image" shortcode attribute
+* nooz shorcode "type" attribute works with other post types
+* fixed issue when sorting by year and using priority/order
+
+= 0.9.0 =
+* prompts identify itself as coming from the Nooz plugin
+* improved functionality (uth)
+
+= 0.8.3 =
+* conditionally enabling "post-thumbnails" theme support for plugin managed post types
+
+= 0.8.2 =
+* fixed warnings being displayed to subscriber role
+
+= 0.8.1 =
+* updated contextual help
+
+= 0.8.0 =
+* added featured image support for press releases and press coverage
+* added option to set a default featured image
+* added pagination support for press releases and press coverage list shortcode
+* added "read more" links support for press releases and press coverage list shortcode
+* added priority sorting option, allowing press release and press coverage items to be pinned
+* better feed support for both press releases and press coverage
+* improved functionality (uth)
+* security additions
+
+= 0.7.0 =
+* added contextual help
+* style adjustments to press release subheadline meta box
+
+= 0.6.1 =
+* adjustment to press-release datetime markup structure
+
+= 0.6.0 =
+* added support for release excerpts
+* added support for coverage excerpts
+* fixed support for coverage source
+* added "nooz_init" action
+* uninstall.php sends 404 on error
+* updated lib files
+* better autoloading
+* code cleanup
+
+= 0.5.5 =
+* improved functionality (uth)
+* code cleanup
+
+= 0.5.4 =
+* fixed issue with uninstall include file
+
+= 0.5.3 =
+* removed unused files in the core version which may have caused errors
+
+= 0.5.2 =
+* fixed issue with supporting files (proper version numbering)
+
+= 0.5.1 =
+* fixed issue with uninstall
+
+= 0.5.0 =
+* improved ui
+* added date format field for press release and press coverage list
+* press release ending field is now an open text field
+* improved functionality (uth)
+
+= 0.4.2 =
+* fixed broken link to press coverage page
+
+= 0.4.1 =
+* fixed issue with press coverage display
+
+= 0.4.0 =
+* better plugin internals
+* revised autoloader prevents interference with our other plugins
+* added uninstall
+
+= 0.3.0 =
+* prompt editor role (and up) to create default press pages
+* if not set, save "release_slug" option
+
+= 0.2.0 =
+* added user configurable settings
+* better functionality (uth)
+
+= 0.1.0 =
+* initial release

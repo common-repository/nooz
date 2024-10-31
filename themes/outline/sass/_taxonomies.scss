@@ -1,0 +1,68 @@
+.nooz-taxonomy {
+    margin: 0;
+    padding-bottom: calc($post-spacing * 2);
+    &__title {
+        display: none;
+    }
+    &__terms {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__term {
+        margin: calc($post-spacing / 2);
+        margin-bottom: 0;
+    }
+    &--post-types &__term {
+        @media (min-width: $site-sm-min) {
+            margin: 0;
+            width: 140px;
+        }
+    }
+    &__term-link {
+        color: #999;
+        display: block;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1.2;
+        padding: 10px 20px;
+        text-align: center;
+        &:visited {
+            color: #999;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color: $palette-color4;
+            text-decoration: none;
+        }
+    }
+    &--post-types &__term-link {
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+        &:hover {
+            background-color: #eee;
+        }
+        @media (min-width: $site-sm-min) {
+            border-bottom: 1px solid #ddd;
+            height: 80px;
+            padding: 0 20px;
+        }
+    }
+    .active &__term-link {
+        color: $palette-color4;
+        text-decoration: none;
+    }
+    &--post-types .active &__term-link {
+        background-color: $palette-color3;
+        border-bottom: 1px solid $palette-color3;
+        color: #fff;
+    }
+}

@@ -1,0 +1,81 @@
+.nooz-settings {
+    &__body {
+        padding-top: 6px;
+    }
+    .mightydev-field[data-dependency-name] {
+        padding-bottom: 15px;
+    }
+    .mightydev-field {
+        &__input--number {
+            padding-right: 25px;
+        }
+    }
+}
+.nooz-field {
+    &--dependency {
+        th, td {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        .mightydev-field {
+            display: none;
+        }
+    }
+    &--tiny input,
+    &--tiny select {
+        width: 80px;
+    }
+    &--small input,
+    &--small select {
+        width: 250px;
+    }
+    &--medium input,
+    &--medium select {
+        width: 500px;
+    }
+    &-radio {
+        ul {
+            margin: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        input[type="radio"] {
+            margin-left: -20px;
+        }
+    }
+    &-media {
+        input {
+            width: 500px;
+        }
+        .mightydev-field-media__preview {
+            background: transparent url();
+            background-size: 6px 6px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            float: left;
+            height: 80px;
+            margin-right: 15px;
+            overflow: hidden;
+            position: relative;
+            width: 142px; // 16:9 142x80
+            img {
+                height: 100%;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .mightydev-field-media__error-message {
+            color: #f00;
+            font-style: italic;
+            margin: 0 0 4px !important;
+        }
+    }
+    &-release-slug input,
+    &-coverage-slug input {
+        width: 250px;
+    }
+}

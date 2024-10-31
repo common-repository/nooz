@@ -1,0 +1,115 @@
+<h2 id="shortcode-usage">Shortcode Usage</h2>
+<p>The plugin exposes a shortcode that allows you to insert a press release or press coverage list on a page. This shortcode is used on the pages initially created when the plugin is installed.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Shortcode</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[nooz]</td>
+            <td>Insert a press release or coverage list view.</td>
+        </tr>
+    </tbody>
+</table>
+<p>You can modify the list view on a per-list basis by adding shortcode attributes. This will override options set on the <a href="/wp-admin/admin.php?page=nooz">Settings Page</a>. If you do not specify an attribute value, the default will be used.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>type</td>
+            <td>The type of list view to insert. <em>Values are <code>release</code>, <code>coverage</code> or a post type.</em></td>
+            <td>release</td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>Add additional CSS class names, use a space to separate multiple class names.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>count</td>
+            <td>The number of items to show in the list.</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>date_format</td>
+            <td>The <a href="https://codex.wordpress.org/Formatting_Date_and_Time" target="_blank">date format</a> to use for each list item.</td>
+            <td>M j, Y</td>
+        </tr>
+        <tr>
+            <td>featured_image_url</td>
+            <td>The default featured image url to use for each item.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>more_link</td>
+            <td>The read more link text. The <code>use_more_link</code> option must be enabled.</td>
+            <td>Read More</td>
+        </tr>
+        <tr>
+            <td>next_link</td>
+            <td>The next/forward link text. The <code>use_pagination</code> option must be enabled.</td>
+            <td>Next</td>
+        </tr>
+        <tr>
+            <td>previous_link</td>
+            <td>The previous/back link text. The <code>use_pagination</code> option must be enabled.</td>
+            <td>Previous</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>The link target to use for press coverage lists, default value applies to press-coverage.</td>
+            <td>_blank</td>
+        </tr>
+        <tr>
+            <td>use_excerpt</td>
+            <td>Whether or not to use an available excerpt. <em>Values are <code>yes</code> or <code>no</code></em>.</td>
+            <td>yes</td>
+        </tr>
+        <tr>
+            <td>use_more_link</td>
+            <td>Enables a per item &quot;read more&quot; link. <em>Values are <code>yes</code> or <code>no</code></em>.</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>use_pagination</td>
+            <td>Enables pagination. <em>Values are <code>yes</code> or <code>no</code></em>.</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>use_archive_link</td>
+            <td>Display the archive page link. <em>Values are <code>yes</code>, <code>no</code> or <code>auto</code></em> Using <code>auto</code> will cause the link to only be displayed if there are more items than <code>count</code>.</td>
+            <td>no</td>
+        </tr>
+        <tr>
+            <td>archive_link</td>
+            <td>The archive link text. The <code>use_archive_link</code> option must be enabled.</td>
+            <td>More&#xA0;Press [Coverage|Releases]&#xA0;...</td>
+        </tr>
+        <tr>
+            <td>archive_link_url</td>
+            <td>The archive link URL. The URL is automatically generated using press coverage and press release slugs.</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<p>Example usage of the <code>[nooz]</code> shortcode:</p>
+<pre>
+<code class="language-html">[nooz type="release"]</code>
+
+<code class="language-html">[nooz type="release" class="custom-class" count="10" date_format="Y-m-d" use_excerpt="no"]</code>
+
+<code class="language-html">[nooz type="coverage" date_format="Y-m-d" target="" use_more_link="yes" use_pagination="yes"]</code>
+
+<code class="language-html">[nooz type="coverage" class="custom-class" count="10" date_format="Y-m-d" use_excerpt="no" target="popup"]</code>
+
+<code class="language-html">[nooz type="post" featured_image_url="/wp-content/uploads/featured_image.jpg" use_archive_link="auto"]</code>
+</pre>

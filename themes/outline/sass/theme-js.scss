@@ -1,0 +1,43 @@
+@import 'vars';
+
+/**
+ * This file is loaded using javascript.
+ *
+ * Reset media query styles and allow javascript added classes to override.
+ */
+.nooz-post {
+    @media (min-width: $site-sm-min) {
+        &:before {
+            display: none;
+        }
+    }
+    .nooz-posts--xs &:before {
+        display: none;
+    }
+    .nooz-posts--sm &:before {
+        display: block;
+    }
+    &__link {
+        @media (min-width: $site-sm-min) {
+            position: relative;
+        }
+        .nooz-posts--xs & {
+            position: relative;
+        }
+        .nooz-posts--sm & {
+            position: absolute;
+        }
+    }
+    &__body {
+        @media (min-width: $site-sm-min) {
+            padding: $post-spacing;
+        }
+        .nooz-posts--xs & {
+            padding: $post-spacing;
+        }
+        .nooz-posts--sm & {
+            padding-bottom: calc($post-spacing / 2);
+            padding-top: calc($post-spacing / 2);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.nooz-subheadline,
+.nooz-body,
+.nooz-boilerplate,
+.nooz-release__contact,
+.nooz-ending {
+    margin-bottom: 15px;
+}
+.nooz-dateline {
+    display: block;
+    margin-bottom: 15px;
+    &__separator {
+        display: none;
+    }
+    .nooz-release--combine-dateline & {
+        display: inline;
+        margin-bottom: 0;
+        &__separator {
+            display: inline;
+        }
+    }
+}
